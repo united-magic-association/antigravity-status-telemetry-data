@@ -1,0 +1,82 @@
+name: Sync Telemetry & Deploy Pages
+
+on:
+  schedule:
+    # Run off-peak hourly at :15 UTC after finalized UTC hour rollup
+    - cron: "15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: telemetry-data-pages
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.sync.outputs.changed }}
+    steps:
+      - name: Checkout telemetry data repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Sync closed hourly telemetry rollups
+        id: sync
+        env:
+          DATA_DIR: ${{ github.workspace }}/data
+          TELEMETRY_BASE_URL: ${{ vars.TELEMETRY_BASE_URL }}
+          TELEMETRY_API_TOKEN: ${{ secrets.TELEMETRY_API_TOKEN }}
+        run: bun run scripts/sync.ts
+
+      - name: Commit updated data snapshots
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): sync hourly telemetry rollup"
+            git push
+          fi
+
+      - name: Checkout antigravity-status web app
+        if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        uses: actions/checkout@v4
+        with:
+          repository: united-magic-association/antigravity-status
+          path: _app
+
+      - name: Build static dashboard with bundled data
+        if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        run: |
+          cd _app/web
+          bun install --frozen-lockfile || bun install
+          bun run build
+          cp -r ../../data dist/data
+
+      - name: Upload Pages artifact
+        if: steps.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _app/web/dist
+
+  deploy:
+    needs: sync
+    if: needs.sync.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
