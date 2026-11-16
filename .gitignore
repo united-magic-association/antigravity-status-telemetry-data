@@ -1,3 +1,7 @@
 .DS_Store
 node_modules/
 _app/
+_data/
+_stage/
+data/*
+!data/.gitkeep

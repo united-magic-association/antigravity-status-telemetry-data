@@ -4,9 +4,9 @@ Public anonymized hourly telemetry snapshots and automated GitHub Pages build fo
 
 ## Repository Structure
 
-- `.github/workflows/sync-and-deploy.yml`: Hourly GitHub Actions workflow (`15 * * * *`, running off-peak after the Worker's `:10 UTC` rollup) that pulls finalized hourly rollups from the Cloudflare Worker (`${TELEMETRY_BASE_URL}/api/telemetry/stats`), updates `data/`, builds the web dashboard from `united-magic-association/antigravity-status`, and deploys to GitHub Pages.
+- `.github/workflows/sync-and-deploy.yml`: Hourly GitHub Actions workflow (`15 * * * *`, running off-peak after the Worker's `:10 UTC` rollup) that loads the latest snapshot from the orphan `data` branch, pulls finalized hourly rollups from the Cloudflare Worker (`${TELEMETRY_BASE_URL}/api/telemetry/stats`), rewrites `data` as a single parentless snapshot commit when changed, builds the web dashboard from `united-magic-association/antigravity-status`, and deploys to GitHub Pages.
 - `scripts/sync.ts`: Incremental hourly rollup sync and rolling window (`24h`, `7d`, `30d`) builder.
-- `data/`:
+- `data` branch (`data/`): Single-commit orphan snapshot branch (no prior commit history) containing:
   - `manifest.json`: Index of available hourly snapshots and rolling aggregates.
   - `hourly/YYYY-MM-DDTHHZ.json`: Anonymized hourly rollup snapshots (retained for 90 days).
   - `rolling/{24h,7d,30d}.json`: Pre-merged rolling window reports.
