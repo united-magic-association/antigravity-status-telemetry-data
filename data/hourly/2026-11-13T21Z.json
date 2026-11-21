@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-13T21:00:00Z",
+    "end": "2026-11-13T22:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 1,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "events": 42,
+      "input_tokens": 174890,
+      "cache_read_tokens": 6792496,
+      "cache_write_tokens": 0,
+      "output_tokens": 69193,
+      "reference_cost_usd": 2.5385952
+    }
+  ],
+  "tps_by_model_effort": [],
+  "quota_by_plan_bucket_model": []
+}

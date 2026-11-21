@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-19T05:00:00Z",
+    "end": "2026-11-19T06:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 1,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "events": 47,
+      "input_tokens": 158914,
+      "cache_read_tokens": 15090375,
+      "cache_write_tokens": 0,
+      "output_tokens": 73872,
+      "reference_cost_usd": 4.222367
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "sample_count": 41,
+      "output_tokens": 73797,
+      "elapsed_ms": 503916,
+      "histogram": [
+        1,
+        5,
+        3,
+        2,
+        3,
+        1,
+        7,
+        3,
+        13,
+        3,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 6,
+      "delta_quota_fraction": 0.03406964999999995,
+      "input_tokens": 158914,
+      "cache_read_tokens": 15090375,
+      "cache_write_tokens": 0,
+      "output_tokens": 73872,
+      "reference_cost_usd": 4.222367,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        3,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 5,
+      "delta_quota_fraction": 0.01739354000000004,
+      "input_tokens": 108979,
+      "cache_read_tokens": 10424659,
+      "cache_write_tokens": 0,
+      "output_tokens": 43040,
+      "reference_cost_usd": 2.8193698,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        3,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-14T16:00:00Z",
+    "end": "2026-11-14T17:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 2,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "high",
+      "events": 71,
+      "input_tokens": 456781,
+      "cache_read_tokens": 8588139,
+      "cache_write_tokens": 0,
+      "output_tokens": 145670,
+      "reference_cost_usd": 4.379229800000002
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "events": 86,
+      "input_tokens": 512548,
+      "cache_read_tokens": 11284161,
+      "cache_write_tokens": 0,
+      "output_tokens": 115534,
+      "reference_cost_usd": 4.6683362
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "effort": "high",
+      "sample_count": 12,
+      "output_tokens": 17806,
+      "elapsed_ms": 106480,
+      "histogram": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        2,
+        0,
+        4,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "high",
+      "slices": 2,
+      "delta_quota_fraction": 0.0055423,
+      "input_tokens": 41249,
+      "cache_read_tokens": 3063797,
+      "cache_write_tokens": 0,
+      "output_tokens": 20587,
+      "reference_cost_usd": 0.9423014000000001,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "high",
+      "slices": 1,
+      "delta_quota_fraction": 0.00008430000000003712,
+      "input_tokens": 13706,
+      "cache_read_tokens": 1180612,
+      "cache_write_tokens": 0,
+      "output_tokens": 9469,
+      "reference_cost_usd": 0.37716240000000006,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

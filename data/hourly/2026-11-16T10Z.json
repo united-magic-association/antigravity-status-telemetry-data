@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-16T10:00:00Z",
+    "end": "2026-11-16T11:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 1,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "events": 119,
+      "input_tokens": 1567550,
+      "cache_read_tokens": 26272308,
+      "cache_write_tokens": 0,
+      "output_tokens": 249395,
+      "reference_cost_usd": 11.382301600000002
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "sample_count": 113,
+      "output_tokens": 249239,
+      "elapsed_ms": 2428051,
+      "histogram": [
+        8,
+        12,
+        12,
+        5,
+        6,
+        7,
+        17,
+        31,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 2,
+      "delta_quota_fraction": 0.04315533000000005,
+      "input_tokens": 1230760,
+      "cache_read_tokens": 23294178,
+      "cache_write_tokens": 0,
+      "output_tokens": 181260,
+      "reference_cost_usd": 9.295475600000003,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 1,
+      "delta_quota_fraction": 0.015442620000000018,
+      "input_tokens": 707070,
+      "cache_read_tokens": 9793146,
+      "cache_write_tokens": 0,
+      "output_tokens": 110819,
+      "reference_cost_usd": 4.702597200000003,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

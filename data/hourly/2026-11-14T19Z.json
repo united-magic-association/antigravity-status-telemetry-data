@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-14T19:00:00Z",
+    "end": "2026-11-14T20:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 2,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Argon",
+      "effort": "medium",
+      "events": 54,
+      "input_tokens": 6779217,
+      "cache_read_tokens": 2654893,
+      "cache_write_tokens": 0,
+      "output_tokens": 80626,
+      "reference_cost_usd": 15.056924599999995
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "high",
+      "events": 27,
+      "input_tokens": 196581,
+      "cache_read_tokens": 2685972,
+      "cache_write_tokens": 0,
+      "output_tokens": 21413,
+      "reference_cost_usd": 1.1873124
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "events": 10,
+      "input_tokens": 74778,
+      "cache_read_tokens": 395034,
+      "cache_write_tokens": 0,
+      "output_tokens": 4416,
+      "reference_cost_usd": 0.28155480000000005
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Argon",
+      "effort": "medium",
+      "sample_count": 54,
+      "output_tokens": 80626,
+      "elapsed_ms": 1852419,
+      "histogram": [
+        18,
+        12,
+        9,
+        4,
+        4,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "effort": "high",
+      "sample_count": 27,
+      "output_tokens": 21413,
+      "elapsed_ms": 245135,
+      "histogram": [
+        1,
+        1,
+        5,
+        5,
+        6,
+        3,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Argon",
+      "attributed_effort": "medium",
+      "slices": 4,
+      "delta_quota_fraction": 0.23670020000000003,
+      "input_tokens": 5486884,
+      "cache_read_tokens": 2122440,
+      "cache_write_tokens": 0,
+      "output_tokens": 58195,
+      "reference_cost_usd": 12.096596,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "high",
+      "slices": 4,
+      "delta_quota_fraction": 0.010852050000000002,
+      "input_tokens": 217854,
+      "cache_read_tokens": 3317283,
+      "cache_write_tokens": 0,
+      "output_tokens": 25691,
+      "reference_cost_usd": 1.4074566000000002,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Argon",
+      "attributed_effort": "medium",
+      "slices": 4,
+      "delta_quota_fraction": 0.05304873999999993,
+      "input_tokens": 5486884,
+      "cache_read_tokens": 2122440,
+      "cache_write_tokens": 0,
+      "output_tokens": 58195,
+      "reference_cost_usd": 12.096596,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "high",
+      "slices": 4,
+      "delta_quota_fraction": 0.002713020000000066,
+      "input_tokens": 217854,
+      "cache_read_tokens": 3317283,
+      "cache_write_tokens": 0,
+      "output_tokens": 25691,
+      "reference_cost_usd": 1.4074566000000002,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0
+      ]
+    }
+  ]
+}

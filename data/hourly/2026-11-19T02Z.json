@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-19T02:00:00Z",
+    "end": "2026-11-19T03:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 1,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "events": 15,
+      "input_tokens": 413843,
+      "cache_read_tokens": 1660198,
+      "cache_write_tokens": 0,
+      "output_tokens": 11524,
+      "reference_cost_usd": 1.2980136000000002
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Neon",
+      "effort": "medium",
+      "events": 22,
+      "input_tokens": 133048,
+      "cache_read_tokens": 1601655,
+      "cache_write_tokens": 0,
+      "output_tokens": 25150,
+      "reference_cost_usd": 0.8882270000000001
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "sample_count": 15,
+      "output_tokens": 11524,
+      "elapsed_ms": 101952,
+      "histogram": [
+        0,
+        0,
+        0,
+        3,
+        2,
+        3,
+        2,
+        2,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "effort": "medium",
+      "sample_count": 20,
+      "output_tokens": 24958,
+      "elapsed_ms": 293824,
+      "histogram": [
+        0,
+        7,
+        5,
+        1,
+        2,
+        2,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 1,
+      "delta_quota_fraction": 0.0014524999999999677,
+      "input_tokens": 13981,
+      "cache_read_tokens": 145185,
+      "cache_write_tokens": 0,
+      "output_tokens": 3701,
+      "reference_cost_usd": 0.101411,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 1,
+      "delta_quota_fraction": 0.0003631399999999285,
+      "input_tokens": 13981,
+      "cache_read_tokens": 145185,
+      "cache_write_tokens": 0,
+      "output_tokens": 3701,
+      "reference_cost_usd": 0.101411,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Neon",
+      "attributed_effort": "medium",
+      "slices": 1,
+      "delta_quota_fraction": 0.0019123999999999253,
+      "input_tokens": 133048,
+      "cache_read_tokens": 1601655,
+      "cache_write_tokens": 0,
+      "output_tokens": 25150,
+      "reference_cost_usd": 0.8882270000000001,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

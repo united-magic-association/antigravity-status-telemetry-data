@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-15T06:00:00Z",
+    "end": "2026-11-15T07:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 2,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "high",
+      "events": 27,
+      "input_tokens": 230262,
+      "cache_read_tokens": 4198962,
+      "cache_write_tokens": 0,
+      "output_tokens": 23273,
+      "reference_cost_usd": 1.5795924
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "events": 79,
+      "input_tokens": 818802,
+      "cache_read_tokens": 10209545,
+      "cache_write_tokens": 0,
+      "output_tokens": 138038,
+      "reference_cost_usd": 5.335968999999999
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "effort": "high",
+      "sample_count": 16,
+      "output_tokens": 14973,
+      "elapsed_ms": 751562,
+      "histogram": [
+        11,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "sample_count": 59,
+      "output_tokens": 100323,
+      "elapsed_ms": 674612,
+      "histogram": [
+        1,
+        4,
+        6,
+        5,
+        8,
+        4,
+        8,
+        5,
+        13,
+        5,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "high",
+      "slices": 3,
+      "delta_quota_fraction": 0.031241970000000063,
+      "input_tokens": 20845,
+      "cache_read_tokens": 2038447,
+      "cache_write_tokens": 0,
+      "output_tokens": 8660,
+      "reference_cost_usd": 0.5532994,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 13,
+      "delta_quota_fraction": 0.05046623000000039,
+      "input_tokens": 429100,
+      "cache_read_tokens": 5497319,
+      "cache_write_tokens": 0,
+      "output_tokens": 77986,
+      "reference_cost_usd": 2.8934958,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        4,
+        3,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "high",
+      "slices": 6,
+      "delta_quota_fraction": 0.04253720999999977,
+      "input_tokens": 216480,
+      "cache_read_tokens": 2995735,
+      "cache_write_tokens": 0,
+      "output_tokens": 16707,
+      "reference_cost_usd": 1.2325909999999998,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 4,
+      "delta_quota_fraction": 0.012889150000000016,
+      "input_tokens": 273390,
+      "cache_read_tokens": 6360711,
+      "cache_write_tokens": 0,
+      "output_tokens": 39004,
+      "reference_cost_usd": 2.2869702000000003,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
