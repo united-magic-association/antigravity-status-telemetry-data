@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-25T07:00:00Z",
+    "end": "2026-11-25T08:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 1,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Neon",
+      "effort": "high",
+      "events": 41,
+      "input_tokens": 1061173,
+      "cache_read_tokens": 9083807,
+      "cache_write_tokens": 0,
+      "output_tokens": 40203,
+      "reference_cost_usd": 4.421543400000001
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Neon",
+      "effort": "high",
+      "sample_count": 28,
+      "output_tokens": 40203,
+      "elapsed_ms": 1174074,
+      "histogram": [
+        8,
+        7,
+        4,
+        5,
+        1,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Neon",
+      "attributed_effort": "high",
+      "slices": 4,
+      "delta_quota_fraction": 0.09279493000000005,
+      "input_tokens": 993399,
+      "cache_read_tokens": 7875806,
+      "cache_write_tokens": 0,
+      "output_tokens": 26327,
+      "reference_cost_usd": 3.8778832000000003,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Neon",
+      "attributed_effort": "high",
+      "slices": 4,
+      "delta_quota_fraction": 0.022674740000000027,
+      "input_tokens": 993399,
+      "cache_read_tokens": 7875806,
+      "cache_write_tokens": 0,
+      "output_tokens": 26327,
+      "reference_cost_usd": 3.8778832000000003,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

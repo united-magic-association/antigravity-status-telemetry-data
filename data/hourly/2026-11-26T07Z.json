@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-26T07:00:00Z",
+    "end": "2026-11-26T08:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 1,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Neon",
+      "effort": "high",
+      "events": 16,
+      "input_tokens": 62077,
+      "cache_read_tokens": 3165501,
+      "cache_write_tokens": 0,
+      "output_tokens": 24839,
+      "reference_cost_usd": 1.0553222000000002
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Neon",
+      "effort": "high",
+      "sample_count": 12,
+      "output_tokens": 24839,
+      "elapsed_ms": 412944,
+      "histogram": [
+        3,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Neon",
+      "attributed_effort": "high",
+      "slices": 1,
+      "delta_quota_fraction": 0.0008320500000000841,
+      "input_tokens": 8939,
+      "cache_read_tokens": 506146,
+      "cache_write_tokens": 0,
+      "output_tokens": 1472,
+      "reference_cost_usd": 0.13677119999999998,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Neon",
+      "attributed_effort": "high",
+      "slices": 1,
+      "delta_quota_fraction": 0.00020816000000001278,
+      "input_tokens": 8939,
+      "cache_read_tokens": 506146,
+      "cache_write_tokens": 0,
+      "output_tokens": 1472,
+      "reference_cost_usd": 0.13677119999999998,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

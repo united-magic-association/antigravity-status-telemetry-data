@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-14T17:00:00Z",
+    "end": "2026-11-14T18:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 2,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "high",
+      "events": 73,
+      "input_tokens": 3017627,
+      "cache_read_tokens": 27255499,
+      "cache_write_tokens": 0,
+      "output_tokens": 355102,
+      "reference_cost_usd": 15.747577799999998
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "events": 10,
+      "input_tokens": 162568,
+      "cache_read_tokens": 564069,
+      "cache_write_tokens": 0,
+      "output_tokens": 8927,
+      "reference_cost_usd": 0.5450737999999999
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "effort": "high",
+      "sample_count": 69,
+      "output_tokens": 110948,
+      "elapsed_ms": 760488,
+      "histogram": [
+        0,
+        5,
+        6,
+        5,
+        6,
+        5,
+        15,
+        9,
+        11,
+        7,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "high",
+      "slices": 9,
+      "delta_quota_fraction": 0.023471600000000037,
+      "input_tokens": 3017627,
+      "cache_read_tokens": 27255499,
+      "cache_write_tokens": 0,
+      "output_tokens": 355102,
+      "reference_cost_usd": 15.747577799999998,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        1,
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "high",
+      "slices": 9,
+      "delta_quota_fraction": 0.004517300000000057,
+      "input_tokens": 2757010,
+      "cache_read_tokens": 27304315,
+      "cache_write_tokens": 0,
+      "output_tokens": 338160,
+      "reference_cost_usd": 15.032803000000001,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        4,
+        1,
+        2
+      ]
+    }
+  ]
+}

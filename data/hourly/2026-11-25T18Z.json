@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-25T18:00:00Z",
+    "end": "2026-11-25T19:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 1,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Neon",
+      "effort": "high",
+      "events": 54,
+      "input_tokens": 183144,
+      "cache_read_tokens": 19749533,
+      "cache_write_tokens": 0,
+      "output_tokens": 72439,
+      "reference_cost_usd": 5.1854626
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Neon",
+      "effort": "high",
+      "sample_count": 43,
+      "output_tokens": 72191,
+      "elapsed_ms": 1311879,
+      "histogram": [
+        6,
+        7,
+        8,
+        8,
+        6,
+        6,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Neon",
+      "attributed_effort": "high",
+      "slices": 6,
+      "delta_quota_fraction": 0.027849809999999864,
+      "input_tokens": 154495,
+      "cache_read_tokens": 16985485,
+      "cache_write_tokens": 0,
+      "output_tokens": 66053,
+      "reference_cost_usd": 4.498723,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        3,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Neon",
+      "attributed_effort": "high",
+      "slices": 5,
+      "delta_quota_fraction": 0.005899960000000037,
+      "input_tokens": 148996,
+      "cache_read_tokens": 16231874,
+      "cache_write_tokens": 0,
+      "output_tokens": 63885,
+      "reference_cost_usd": 4.3109868,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        1,
+        0
+      ]
+    }
+  ]
+}

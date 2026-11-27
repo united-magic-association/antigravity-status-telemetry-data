@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-16T18:00:00Z",
+    "end": "2026-11-16T19:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 1,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "events": 131,
+      "input_tokens": 620310,
+      "cache_read_tokens": 22041954,
+      "cache_write_tokens": 0,
+      "output_tokens": 185846,
+      "reference_cost_usd": 7.8791628
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "sample_count": 123,
+      "output_tokens": 185536,
+      "elapsed_ms": 1456045,
+      "histogram": [
+        7,
+        15,
+        10,
+        6,
+        12,
+        8,
+        12,
+        18,
+        27,
+        8,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 11,
+      "delta_quota_fraction": 0.03989245000000008,
+      "input_tokens": 1104130,
+      "cache_read_tokens": 21424498,
+      "cache_write_tokens": 0,
+      "output_tokens": 194234,
+      "reference_cost_usd": 8.8239676,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        9,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 11,
+      "delta_quota_fraction": 0.006610630000000062,
+      "input_tokens": 1104130,
+      "cache_read_tokens": 21424498,
+      "cache_write_tokens": 0,
+      "output_tokens": 194234,
+      "reference_cost_usd": 8.8239676,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        8,
+        2,
+        0
+      ]
+    }
+  ]
+}

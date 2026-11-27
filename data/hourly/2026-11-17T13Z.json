@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-17T13:00:00Z",
+    "end": "2026-11-17T14:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 1,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "events": 5,
+      "input_tokens": 336622,
+      "cache_read_tokens": 980978,
+      "cache_write_tokens": 0,
+      "output_tokens": 1255,
+      "reference_cost_usd": 0.8844995999999999
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "sample_count": 4,
+      "output_tokens": 1255,
+      "elapsed_ms": 40016,
+      "histogram": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": []
+}

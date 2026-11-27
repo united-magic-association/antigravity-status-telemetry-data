@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-18T11:00:00Z",
+    "end": "2026-11-18T12:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 1,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "events": 100,
+      "input_tokens": 1142915,
+      "cache_read_tokens": 21616865,
+      "cache_write_tokens": 0,
+      "output_tokens": 159201,
+      "reference_cost_usd": 8.519615
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "sample_count": 89,
+      "output_tokens": 159110,
+      "elapsed_ms": 1385850,
+      "histogram": [
+        7,
+        23,
+        9,
+        9,
+        6,
+        8,
+        8,
+        6,
+        11,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 10,
+      "delta_quota_fraction": 0.038686650000000045,
+      "input_tokens": 1142915,
+      "cache_read_tokens": 21616865,
+      "cache_write_tokens": 0,
+      "output_tokens": 159201,
+      "reference_cost_usd": 8.519615,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        7,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 8,
+      "delta_quota_fraction": 0.010609700000000055,
+      "input_tokens": 711894,
+      "cache_read_tokens": 14302730,
+      "cache_write_tokens": 0,
+      "output_tokens": 123527,
+      "reference_cost_usd": 5.766658,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        6,
+        0,
+        0
+      ]
+    }
+  ]
+}

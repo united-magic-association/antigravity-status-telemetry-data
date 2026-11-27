@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-22T12:00:00Z",
+    "end": "2026-11-22T13:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 1,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Neon",
+      "effort": "high",
+      "events": 7,
+      "input_tokens": 369672,
+      "cache_read_tokens": 2108606,
+      "cache_write_tokens": 0,
+      "output_tokens": 12766,
+      "reference_cost_usd": 1.3142572
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Neon",
+      "effort": "high",
+      "sample_count": 7,
+      "output_tokens": 12766,
+      "elapsed_ms": 177049,
+      "histogram": [
+        0,
+        2,
+        3,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Neon",
+      "attributed_effort": "high",
+      "slices": 1,
+      "delta_quota_fraction": 0.0296864,
+      "input_tokens": 369672,
+      "cache_read_tokens": 2108606,
+      "cache_write_tokens": 0,
+      "output_tokens": 12766,
+      "reference_cost_usd": 1.3142572,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

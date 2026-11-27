@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "scope": "aggregated",
+  "window": {
+    "start": "2026-11-23T04:00:00Z",
+    "end": "2026-11-23T05:00:00Z",
+    "duration_secs": 3600
+  },
+  "contributors": 1,
+  "usage_by_plan_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "events": 84,
+      "input_tokens": 784106,
+      "cache_read_tokens": 19471920,
+      "cache_write_tokens": 0,
+      "output_tokens": 232607,
+      "reference_cost_usd": 8.25388
+    }
+  ],
+  "tps_by_model_effort": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "effort": "xhigh",
+      "sample_count": 76,
+      "output_tokens": 232542,
+      "elapsed_ms": 1398569,
+      "histogram": [
+        1,
+        6,
+        3,
+        6,
+        11,
+        5,
+        7,
+        7,
+        25,
+        5,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "quota_by_plan_bucket_model": [
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-5h",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 6,
+      "delta_quota_fraction": 0.024781300000000117,
+      "input_tokens": 649430,
+      "cache_read_tokens": 12574797,
+      "cache_write_tokens": 0,
+      "output_tokens": 144362,
+      "reference_cost_usd": 5.5461634,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "plan_tier": "Google AI Ultra",
+      "bucket": "gemini-weekly",
+      "attributed_model": "Gemini 4 Hydrogen",
+      "attributed_effort": "xhigh",
+      "slices": 4,
+      "delta_quota_fraction": 0.004131470000000137,
+      "input_tokens": 265794,
+      "cache_read_tokens": 9501983,
+      "cache_write_tokens": 0,
+      "output_tokens": 92459,
+      "reference_cost_usd": 3.5414926,
+      "cost_per_pct_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0
+      ]
+    }
+  ]
+}
